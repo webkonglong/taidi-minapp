@@ -1,0 +1,91 @@
+/**index.wxss**/
+page {
+  height: 100%;
+  background-color: #F4F4F4;
+}
+.header {
+  padding: 20px 0 60px 0;
+  box-sizing: border-box;
+  text-align: center;
+  height: 156px;
+  background-color: #4F67F9;
+  position: relative;
+  overflow: hidden;
+}
+
+.logon-header {
+  padding: 250px 0 60px 0;
+  box-sizing: border-box;
+  text-align: center;
+  height: 100vh;
+  background-color: #4F67F9;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-before {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .05);
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.header-after {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .05);
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+}
+
+.userinfo-avatar {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.item {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  background-color: #fff;
+}
+
+.item .icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  vertical-align: top;
+  top: 15px;
+  margin-right: 10px;
+}
+
+.item .go-icon {
+  width: 30px;
+  height: 30px;
+  float: right;
+  vertical-align: top;
+  position: relative;
+  top: 10px;
+}
+
+.item text {
+  color: rgba(0, 0, 0, .65);
+}
+
+.login-btn {
+  background-color: rgba(255, 255, 255, .9);
+  color: #4F67F9;
+}

@@ -1,0 +1,129 @@
+page {
+  height: 100%;
+  background-color: #F4F4F4;
+}
+
+.page {
+  padding: 20px 20px 80px 20px;
+  box-sizing: border-box;
+}
+
+.add {
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  height: 40px;
+  bottom: 10px;
+  background-color: #4F67F9;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px -3px rgba(0,0,0,.08), 0 4px 14px 0 rgba(0,0,0,.05), 0 6px 24px 8px rgba(0,0,0,.03);
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content-page {
+  padding: 10px 20px;
+  height: 64px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.left {
+  display: inline-block;
+}
+
+.go-icon {
+  float: right;
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+  position: relative;
+  top: 6px;
+}
+
+.name {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.code {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.default {
+  display: inline-block;
+  font-size: 12px;
+  color: #ff4d4f;
+  border: 1px solid #ff4d4f;
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
+  padding: 0 2px;
+  box-sizing: border-box;
+  
+}
+
+.touch-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+  background: #f5f5f5;
+  height: 216rpx;
+}
+  
+  .content {
+    width: 100%;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+    margin-left: -150px;
+    box-sizing: border-box;
+  }
+  
+  .del {
+    width: 150px;
+    height: 64px;
+    display: flex;
+    color: #fff;
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    line-height: 64px;
+  }
+  .del-bth {
+    background-color: #ff4d4f;
+    flex: 1;
+    vertical-align: top;
+    height: 100%;
+    text-align: center;
+  }
+
+  .edit-bth {
+    background-color: #4F67F9;
+    flex: 1;
+    vertical-align: top;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .touch-move-active .content, .touch-move-active .del {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }

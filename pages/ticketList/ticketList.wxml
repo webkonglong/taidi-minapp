@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="body">
+    <view wx:if="{{!data.length}}" class="title" >暂无小票</view>
+    <view wx:if="{{!!data.length}}" wx:for="{{data}}" wx:key="id">
+      <view class="item" bindtap="change" data-id="{{item.id}}">
+        <view class="info">
+          <view class="icon">{{item.shop_name[0]}}</view><text class="name">{{item.shop_name}}</text>
+          <view wx:if="{{item.created_at}}" class="time">{{item.created_at}}</view>
+        </view>
+        <view class="amount">-{{item.total_price}}</view>
+      </view>
+    </view>
+  </view>
+</view>

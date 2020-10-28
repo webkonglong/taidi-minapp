@@ -1,0 +1,96 @@
+page {
+  height: 100%;
+  background-color: #F4F4F4;
+}
+
+.page {
+  padding: 40px 20px 20px 20px;
+  box-sizing: border-box;
+}
+
+.body {
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px -8px rgba(0,0,0,.08), 0 9px 28px 0 rgba(0,0,0,.05), 0 12px 48px 16px rgba(0,0,0,.03);
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.seal {
+  width: 128px;
+  height: 134px;
+  right: 20px;
+  top: 140px;
+  position: absolute;
+  bottom: 100px;
+  opacity: 0;
+  transform-origin: 50% 50%;
+  transform: rotate(-2deg) scale(5);
+  transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.loaded {
+  opacity: .75;
+  transform: rotate(-15deg) scale(1);
+}
+
+.title {
+  color: #4F67F9;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.item {
+  margin-bottom: 14px;
+}
+
+.lebal {
+  color: rgba(0,0,0,.65);
+  margin-bottom: 6px;
+}
+
+.value {
+  color: rgba(0,0,0,.4);
+  word-break:break-all;
+}
+
+.btn {
+  margin-top: 40px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #4F67F9;
+}
+
+.footer {
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px -8px rgba(0,0,0,.08), 0 9px 28px 0 rgba(0,0,0,.05), 0 12px 48px 16px rgba(0,0,0,.03);
+}
+
+.auth-node {
+  display: inline-block;
+  vertical-align: top;
+  width: 26%;
+  padding: 10px;
+  text-align: center;
+}
+
+.node-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 4px;
+}
+
+.node-name {
+  color: rgba(0,0,0,.65);
+  font-size: 12px;
+}

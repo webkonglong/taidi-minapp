@@ -1,0 +1,30 @@
+<view class="page">
+  <view class="body">
+    <view class="title">泰砥区块链存证证书</view>
+    <view class="item">
+      <text class="lebal">存证内容:</text>
+      <view class="value">{{tx_hash}}</view>
+    </view>
+    <view class="item">
+      <text class="lebal">所在区块:</text>
+      <view class="value">{{block_num}}</view>
+    </view>
+    <view class="item">
+      <text class="lebal">存证时间:</text>
+      <view class="value">{{upload_at}}</view>
+    </view>
+    <view bindtap="goBlockChain" class="btn">链上查询</view>
+    <image class="{{isLoaded ? 'seal loaded' : 'seal'}}" src="../../images/seal.png"></image>
+  </view>
+  <view class="footer">
+    <view class="title">认证节点</view>
+    <view class="auth-node">
+      <image class="node-icon" src="../../images/market.png"></image>
+      <view class="node-name">海鼎商场</view>
+    </view>
+    <view class="auth-node">
+      <image class="node-icon" src="../../images/blockchain.png"></image>
+      <view class="node-name">泰砥科技</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="page">
+  <view wx:for="{{list}}" wx:key="id" class="item {{item.isTouchMove ? 'touch-move-active' : ''}}">
+    <view class="content">
+      <view class="content-page" style="{{item.txtStyle}}" data-index='{{index}}' bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchE">
+        <view class="left">
+          <view class="name">{{item.name}}<view class="default" wx:if="{{item.status === 1}}">默认</view></view>
+          <text class="code">{{item.code}}</text>
+        </view>
+        <image class="go-icon" src="../../images/go.png"></image>
+      </view>
+    </view>
+    <view class="del" catchtap="delBtn" data-index="{{index}}">
+      <view class="edit-bth" data-id="{{item.id}}">设为默认</view>
+      <view class="del-bth" data-id="{{item.id}}">删除</view>
+    </view>
+  </view>
+  <view bindtap="add" class="add">添加发票抬头</view>
+</view>

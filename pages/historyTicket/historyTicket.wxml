@@ -1,0 +1,18 @@
+<view class="page">
+  <view wx:for="{{data}}" wx:key="id" class="item">
+    <view bindtap="change" data-id="{{item.id}}" class="header">
+      <image class="time-icon" src="../../images/time.png"></image>
+      <text class="time">{{item.time}}</text>
+      <image class="go-icon" src="../../images/go.png"></image>
+    </view>
+    <view bindtap="change" data-id="{{item.id}}" class="body">
+      <text class="name">{{item.name}}</text>
+      <view class="type">{{item.type}}</view>
+      <text class="amount">{{item.amount}}元</text>
+    </view>
+    <view class="footer">
+      <text class="status">{{item.status}}</text>
+      <text class="rest">重新开票</text>
+    </view>
+  </view>
+</view>

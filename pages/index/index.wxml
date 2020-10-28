@@ -1,0 +1,44 @@
+
+<view class="page">
+  <view class="{{(userInfo && userInfo.avatarUrl) ? 'header' : 'logon-header'}}">
+    <image 
+      wx:if="{{userInfo && userInfo.avatarUrl}}" 
+      bindtap="bindViewTap" 
+      class="userinfo-avatar" 
+      src="{{userInfo.avatarUrl}}" 
+      mode="cover"
+    ></image>
+    <view 
+      wx:if="{{userInfo && userInfo.avatarUrl}}" 
+      class="userinfo-nickname"
+    >{{userInfo.nickName}}</view>
+    <button 
+      wx:if="{{!userInfo || !userInfo.avatarUrl}}" 
+      open-type="getUserInfo"
+      class="login-btn"
+      bindgetuserinfo="onGetUserInfo"
+    >登录</button>
+    <view class="header-before"></view>
+    <view class="header-after"></view>
+  </view>
+  <view wx:if="{{userInfo && userInfo.avatarUrl}}"  bindtap="goHistory" class="item">
+    <image class="icon" src="../../images/history.png"></image>
+    <text>我的小票</text>
+    <image class="go-icon" src="../../images/go.png"></image>
+  </view>
+  <!-- <view wx:if="{{userInfo && userInfo.avatarUrl}}"  class="item">
+    <image class="icon" src="../../images/invoice.png"></image>
+    <text>开发票</text>
+    <image class="go-icon" src="../../images/go.png"></image>
+  </view>
+  <view wx:if="{{userInfo && userInfo.avatarUrl}}"  bindtap="goHistoryTicket"  class="item">
+    <image class="icon" src="../../images/me.png"></image>
+    <text>我的发票</text>
+    <image class="go-icon" src="../../images/go.png"></image>
+  </view>
+  <view wx:if="{{userInfo && userInfo.avatarUrl}}"  bindtap="goMyInfo"  class="item">
+    <image class="icon" src="../../images/my-title.png"></image>
+    <text>我的发票抬头</text>
+    <image class="go-icon" src="../../images/go.png"></image>
+  </view> -->
+</view>

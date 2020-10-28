@@ -1,0 +1,38 @@
+<view class="page">
+  <view class="title">
+    <view class="icon">{{data ? data.shop_name[0] : '--'}}</view>
+    <view class="name">{{data ? data.shop_name : '--'}}</view>
+    <view class="amount">{{data ? '-' + data.pay_amount : '--'}}</view>
+    <view class="type">交易成功</view>
+  </view>
+  <view class="body">
+    <view class="item">付款方式<text>{{data ? data.pay_method : '--'}}</text></view>
+    <view class="item">抵用券<text>{{data ?  '-' + data.ticket + '元' : '--'}}</text></view>
+    <view class="item">流水号<text>{{data ? data.serial_num : '--'}}</text></view>
+    <view class="item-table">
+      <view class="left">商品</view>
+      <view>单价</view>
+      <view class="right">数量</view>
+    </view>
+    <view class="item-table-box">
+      <view wx:if="{{data}}" wx:for="{{data.items}}" wx:key="name">
+        <view class="table-tr">
+          <view class="left table-th">{{item.name}}</view>
+          <view class="table-th">{{item.price}}</view>
+          <view class="right table-th">{{item.amount}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="item">商品总数<text>{{total}}</text></view>
+    <view class="item">收银机号<text>{{data ? data.pos_num : '--'}}</text></view>
+    <view class="item">创建时间<text>{{data ? data.created_at : '--'}}</text></view>
+  </view>
+  <view class="btn">
+    <view 
+      bindtap="change" 
+      data-tx_hash="{{data ? data.blockchain.tx_hash : '--'}}"
+      data-block_num="{{data ? data.blockchain.block_num : '--'}}"
+      data-upload_at="{{data ? data.blockchain.upload_at : '--'}}"
+    >区块链小票</view><view bindtap="goWetax" class="after-btn">开发票</view>
+  </view>
+</view>

@@ -1,0 +1,89 @@
+page {
+  height: 100%;
+  background-color: #F4F4F4;
+}
+
+.page {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  box-shadow: 0 6px 16px -8px rgba(0,0,0,.08), 0 9px 28px 0 rgba(0,0,0,.05), 0 12px 48px 16px rgba(0,0,0,.03);
+  padding: 20px 10px;
+  color: rgba(0,0,0,.65);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.header view {
+  display: inline-block;
+  float: right;
+  color: #4F67F9;
+  vertical-align: top;
+}
+
+.header view image {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+  position: relative;
+  top: -4px;
+}
+
+.body {
+  box-shadow: 0 6px 16px -8px rgba(0,0,0,.08), 0 9px 28px 0 rgba(0,0,0,.05), 0 12px 48px 16px rgba(0,0,0,.03);
+  padding: 0 10px;
+  margin: 20px 0px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.body .item {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid rgba(0,0,0,.03);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.body .name {
+  display: inline-block;
+  width: 80px;
+  color: rgba(0,0,0,.65);
+}
+
+.body .value {
+  color: rgba(0,0,0,.4);
+}
+
+.body .value text {
+  color: #4F67F9;
+}
+
+.footer {
+  box-shadow: 0 6px 16px -8px rgba(0,0,0,.08), 0 9px 28px 0 rgba(0,0,0,.05), 0 12px 48px 16px rgba(0,0,0,.03);
+  padding: 10px 10px 20px 10px;
+  color: rgba(0,0,0,.65);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.footer .title {
+  color: rgba(0,0,0,.85);
+}
+
+.footer .item {
+  margin-top: 10px;
+}
+
+.footer .item .name {
+  display: inline-block;
+  width: 80px;
+  color: rgba(0,0,0,.65);
+}
+
+.footer .item .value {
+  color: rgba(0,0,0,.4);
+}

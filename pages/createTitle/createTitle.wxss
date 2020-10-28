@@ -1,0 +1,137 @@
+page {
+  height: 100%;
+  background-color: #F4F4F4;
+}
+
+.save {
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  height: 40px;
+  bottom: 10px;
+  background-color: #4F67F9;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.page {
+  padding: 20px 20px 80px 20px;
+  box-sizing: border-box;
+}
+
+.info {
+  box-shadow: 0 3px 6px -3px rgba(0,0,0,.08), 0 4px 14px 0 rgba(0,0,0,.05), 0 6px 24px 8px rgba(0,0,0,.03);
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.type {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px 0 100px;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.03);
+}
+
+.item {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px 0 100px;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.03);
+}
+
+.type .lebal {
+  width: 90px;
+  position: absolute;
+  left: 10px;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(0,0,0,.65);
+}
+
+.item .lebal {
+  width: 90px;
+  position: absolute;
+  left: 10px;
+  height: 40px;
+  line-height: 40px;
+  color: rgba(0,0,0,.65);
+}
+
+.type .value {
+  height: 50px;
+  line-height: 50px;
+  color: rgba(0,0,0,.4);
+}
+
+.type .r {
+  margin-right: 30px;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,.2);
+  position: relative;
+  top: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+.change-radio {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #4F67F9;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.item .value {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: rgba(0,0,0,.4);
+}
+
+.item .placeholder {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: rgba(0,0,0,.2);
+}
+
+.footer {
+  box-shadow: 0 3px 6px -3px rgba(0,0,0,.08), 0 4px 14px 0 rgba(0,0,0,.05), 0 6px 24px 8px rgba(0,0,0,.03);
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.footer view {
+  color: rgba(0,0,0,.65);
+}
+
+.footer text {
+  color: rgba(0,0,0,.4);
+  font-size: 12px;
+}
+
+.switch {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}

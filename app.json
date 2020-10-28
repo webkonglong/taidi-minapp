@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/ticket/ticket",
+    "pages/link/link",
+    "pages/blockchainticket/blockchainticket",
+    "pages/createTitle/createTitle",
+    "pages/myInfo/myInfo",
+    "pages/ticketInfo/ticketInfo",
+    "pages/historyTicket/historyTicket",
+    "pages/ticketList/ticketList"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

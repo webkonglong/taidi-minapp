@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="header">
+    电子发票<view>已开票<image src="../../images/go.png"></image></view>
+  </view>
+  <view class="body">
+    <view class="item"><view class="name">公司名称</view><text class="value">上海xx科技有限公司</text></view>
+    <view class="item"><view class="name">发票金额</view><text class="value"><text>999.00</text>元</text></view>
+    <view class="item"><view class="name">公司税号</view><text class="value">928371827438127438213</text></view>
+    <view class="item"><view class="name">注册地址</view><text class="value">上海市普通区东大名路5层</text></view>
+    <view class="item"><view class="name">注册电话</view><text class="value">021-1231231</text></view>
+    <view class="item"><view class="name">开户银行</view><text class="value">中国银行虹口支行</text></view>
+    <view class="item"><view class="name">银行账号</view><text class="value">61114121232134</text></view>
+    <view class="item"><view class="name">申请时间</view><text class="value">2020-09-04 周五 10:00</text></view>
+    <view class="item"><view class="name">备注</view><text class="value">无</text></view>
+  </view>
+  <view class="footer">
+    <text class="title">接收方式</text>
+    <view class="item"><view class="name">电子邮箱</view><text class="value">anmingzhe@me.com</text></view>
+  </view>
+</view>
