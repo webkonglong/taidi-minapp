@@ -6,17 +6,20 @@ Page({
   data: {
   },
   onLoad: function () {
-    wx.showLoading({
-      title: '',
-      mask: true
-    })
-    app.globalData.url = 'https://minigram.ethgeek.cn/v1'
+    app.globalData.url = 'https://app01.taidihub.com/v1'
     if (app.globalData.userInfo) {
       wx.hideLoading()
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
+      if (!app.globalData.token) {
+        wx.showLoading({
+          title: '',
+          mask: true
+        })
+        this.getcode()
+      }
     } else if (this.data.canIUse){
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
@@ -25,6 +28,13 @@ Page({
           userInfo: res.userInfo,
           hasUserInfo: true
         })
+        if (!app.globalData.token) {
+          wx.showLoading({
+            title: '',
+            mask: true
+          })
+          this.getcode()
+        }
       }
     } else {
       // 在没有 open-type=getUserInfo 版本的兼容处理
@@ -35,18 +45,21 @@ Page({
             userInfo: res.userInfo,
             hasUserInfo: true
           })
+          if (!app.globalData.token) {
+            wx.showLoading({
+              title: '',
+              mask: true
+            })
+            this.getcode()
+          }
         }
       })
-    }
-    if (!app.globalData.token) {
-      this.getcode()
     }
   },
   onGetUserInfo: function (e) {
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
-      // hasUserInfo: true
     })
   },
   getcode () {
@@ -80,9 +93,18 @@ Page({
     })
   },
   goHistory: function () {
-    wx.navigateTo({
-      url: '../ticketList/ticketList'
-    })
+    if (!this.data.userInfo) {
+      wx.showToast({
+        title: '请登陆', 
+        icon: 'none', 
+        duration: 1000
+      })
+    } else {
+      console.log(1111)
+      wx.navigateTo({
+        url: '../ticketList/ticketList'
+      })
+    }
   },
   goHistoryTicket: function () {
     wx.navigateTo({

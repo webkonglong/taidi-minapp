@@ -1,27 +1,28 @@
 
 <view class="page">
-  <view class="{{(userInfo && userInfo.avatarUrl) ? 'header' : 'logon-header'}}">
+  <view class="header">
     <image 
-      wx:if="{{userInfo && userInfo.avatarUrl}}" 
       bindtap="bindViewTap" 
       class="userinfo-avatar" 
-      src="{{userInfo.avatarUrl}}" 
+      src="{{userInfo ? userInfo.avatarUrl : '../../images/user.png'}}" 
       mode="cover"
     ></image>
     <view 
-      wx:if="{{userInfo && userInfo.avatarUrl}}" 
+      wx:if="{{userInfo}}" 
       class="userinfo-nickname"
     >{{userInfo.nickName}}</view>
-    <button 
-      wx:if="{{!userInfo || !userInfo.avatarUrl}}" 
+    <view>
+    <button
+      wx:if="{{!userInfo}}" 
       open-type="getUserInfo"
       class="login-btn"
       bindgetuserinfo="onGetUserInfo"
-    >登录</button>
+    >点击登陆</button>
+    </view>
     <view class="header-before"></view>
     <view class="header-after"></view>
   </view>
-  <view wx:if="{{userInfo && userInfo.avatarUrl}}"  bindtap="goHistory" class="item">
+  <view bindtap="goHistory" class="item">
     <image class="icon" src="../../images/history.png"></image>
     <text>我的小票</text>
     <image class="go-icon" src="../../images/go.png"></image>
@@ -41,4 +42,12 @@
     <text>我的发票抬头</text>
     <image class="go-icon" src="../../images/go.png"></image>
   </view> -->
+  <view class="footer">
+    <view>5G sMall创新体验馆是丙晟代表性的科技品牌，主要由泰砥科技提供技术支持，致力于打造数字经济时代的信任新基建。</view>
+    <view>这个小程序主要实现了丙晟旗下各大商场的购物小票上链以及开发票的主要功能，用户可以在小程序中的区块链小票页面直接查询上链信息。</view>
+    <view>丙晟科技坚持核心技术突破，融合包括区块链、AIoT、智能⻛控等技术，</view>
+    <view>通过链接各个产业网络，扎实解决行业实际问题，推动区块链技术平⺠化。</view>
+    <view>坚持开放生态，与合作伙伴共建共享区块链产业带来的价值互联红利。</view>
+    <view>后续功能还在开发中，敬请期待</view>
+  </view>
 </view>

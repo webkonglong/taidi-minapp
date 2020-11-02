@@ -6,7 +6,7 @@ Page({
   },
   onLoad: function (option) {
     this.setData({
-      url: 'https://scan.taiditech.com/#/transaction/hash/' + option.hash
+      url: 'https://scan.taidihub.com/#/transaction/hash/' + option.hash
     })
   }
 })

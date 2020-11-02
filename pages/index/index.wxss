@@ -2,6 +2,7 @@
 page {
   height: 100%;
   background-color: #F4F4F4;
+  position: relative;
 }
 .header {
   padding: 20px 0 60px 0;
@@ -48,6 +49,7 @@ page {
   height: 64px;
   margin-bottom: 10px;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, .85);
 }
 
 .userinfo-nickname {
@@ -88,4 +90,16 @@ page {
 .login-btn {
   background-color: rgba(255, 255, 255, .9);
   color: #4F67F9;
+  display: inline-block !important;
+  width: 100px !important;
+  padding: 0px !important;
+  color: #fff;
+  background: none;
+}
+
+.footer {
+  padding: 0 20px;
+  font-size: 12px;
+  color: #9195A3;
+  margin-top: 30px;
 }
